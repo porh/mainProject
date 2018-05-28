@@ -22,6 +22,7 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     color: white;
+    background-size: cover;
 }
 .companyName {
     font-family: 'Chango', cursive;
