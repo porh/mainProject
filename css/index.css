@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Chango');
+body {
+    max-width: 960px;
+    margin: auto;
+    background-image: url("../images/bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+}
+.companyName {
+    font-family: 'Chango', cursive;
+}
+.menu li {
+    display: inline;
+    list-style-type: none;
+}
+.menu li a {
+    text-decoration: none;
+    color: silver;
+}
+.menu li a:hover {
+    color: gray;
+}
+hr {
+    border: none;
+    width: 65%;
+    background-color: #4DD7FA;
+    height: 3px;
+    border-radius: 2px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+input, textarea {
+    border: 0px;
+    color: white;
+}
+input[type="submit"] {
+    background-color: #4DD7FA;
+}
+input[type="text"], input[type="email"], textarea {
+    background: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+}
+.logo {
+    text-align: center;
+}
+.opasityCont {
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+.opasityCont img {
+    opacity: 0.6;
+}
+.opFill {
+    opacity: 0.4;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-bottom: -66px;
+    z-index: -1;
+    display: block;
+}
+.header {
+    
+}

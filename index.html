@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacts</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
 <body>
-    <div>
+    <div class="logo">
         <div class="companyName">ITMarkets</div>
         <div>TRY & BUY</div>
     </div>
@@ -38,9 +38,10 @@
             </li>
         </ul>
     </nav>
+    <hr/>
+    
     <main>
-        <hr/>
-        <h1>CONTACTS</h1>
+        <h1 class="header">CONTACTS</h1>
         <div>
             Our contacts<br>
             office@animation-for-business.com<br>
@@ -50,14 +51,23 @@
             Сopyright 2018
         </div>
         <form action="#">
-            <img src="images/user.png" alt="Name">
-            <input placeholder="Name" type="text" name="name" pattern=".{3,}" title="Three or more characters" required>
-            <img src="images/email.png" alt="E-mail">
-            <input placeholder="E-mail" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,23}$" required>
-            <textarea placeholder="Message" cols="40" rows="5" required></textarea>
+            <label class="opasityCont">
+                <div class="opFill"></div>
+                <img src="images/user.png" alt="Name">
+                <input placeholder="Name" type="text" name="name" pattern=".{3,}" title="Three or more characters" required>
+            </label>
+            <label class="opasityCont">
+                <div class="opFill"></div>
+                <img src="images/email.png" alt="E-mail">
+                <input placeholder="E-mail" type="email" name="email" required>
+            </label>
+            <label class="opasityCont">
+                <div class="opFill"></div>
+                <textarea placeholder="Message" cols="40" rows="5" required></textarea>
+            </label>
             <input type="submit" value="SEND">
         </form>
-        <hr/>
     </main>
+    <hr/>
 </body>
 </html>
