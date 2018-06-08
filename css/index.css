@@ -52,22 +52,22 @@ main {
 }
 .opasityCont {
     border-bottom: 2px solid black;
-    display: flex;
+    display: block;
     align-items: center;
+    position: relative;
 }
 .opasityCont img {
     opacity: 0.6;
+    width: 40px;
 }
-.opFill {
-    opacity: 0.4;
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    margin-bottom: -66px;
-    z-index: -1;
-    display: block;
-}
-.header {
-    
+.opasityCont::after {
+  content: "";
+  background-color: black;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
