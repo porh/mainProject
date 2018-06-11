@@ -27,23 +27,22 @@ body {
     letter-spacing: 10px;
     margin: 10px 0px 0px 9px;
 }
-.menu {
+nav {
     display: flex;
-    flex: 1;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 15px 25px 0px 25px;
 }
-.menu li {
+nav li {
     display: inline;
     list-style-type: none;
 }
-.menu li a {
-    color: rgb(204, 204, 204);
+nav li a {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
     text-decoration: none;
     color: silver;
 }
-.menu li a:hover {
+nav li a:hover {
     color: white;
 }
 hr {
