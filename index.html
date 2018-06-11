@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacts</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
 <body>
-    <div class="logo">
-        <div class="companyName">ITMarkets</div>
+    <a href="." class="logo">
+        <div>ITMarkets</div>
         <div>TRY & BUY</div>
-    </div>
+    </a>
     <nav>
         <ul class="menu">
             <li>
@@ -34,36 +34,41 @@
                 <a href="#">Download</a>
             </li>
             <li>
-                <a href="#">Contacts</a>
+                <a class="active" href="#">Contact</a>
             </li>
         </ul>
     </nav>
     <hr/>
     
     <main>
-        <h1 class="header">CONTACTS</h1>
-        <div>
-            Our contacts<br>
-            office@animation-for-business.com<br>
-            +38(067)-000-00-00<br>
-            www.facebook.com/animation<br>
-            www.animation-for-business.com<br>
-            Сopyright 2018
+        <div class="header">CONTACT</div>
+        <div class="container">
+            <section>
+                Our contacts<br>
+                office@animation-for-business.com<br>
+                +38(067)-000-00-00<br>
+                www.facebook.com/animation<br>
+                www.animation-for-business.com<br><br>
+                Сopyright 2018
+            </section>
+            <form action="#">
+                <span>Drop us a line</span>
+                <label class="opasityCont">
+                    <img src="images/user.svg" alt="Name">
+                    <input placeholder="Name" type="text" name="name" pattern=".{3,}" title="Three or more characters" required>
+                </label>
+                <label class="opasityCont">
+                    <img src="images/email.svg" alt="E-mail">
+                    <input placeholder="E-mail" type="email" name="email" required>
+                </label>
+                <label class="opasityCont message">
+                    <textarea placeholder="Message" cols="40" rows="8" required></textarea>
+                </label>
+                <div class="submitWrapper">
+                    <input type="submit" value="SEND">
+                </div>
+            </form>
         </div>
-        <form action="#">
-            <label class="opasityCont">
-                <img src="images/user.png" alt="Name">
-                <input placeholder="Name" type="text" name="name" pattern=".{3,}" title="Three or more characters" required>
-            </label>
-            <label class="opasityCont">
-                <img src="images/email.png" alt="E-mail">
-                <input placeholder="E-mail" type="email" name="email" required>
-            </label>
-            <label class="opasityCont">
-                <textarea placeholder="Message" cols="40" rows="5" required></textarea>
-            </label>
-            <input type="submit" value="SEND">
-        </form>
     </main>
     <hr/>
 </body>
