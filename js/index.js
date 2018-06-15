@@ -28,7 +28,7 @@
     window.addEventListener("resize", onResize);
     onResize();
     
-    if (false) intId = setInterval(()=>{
+    intId = setInterval(()=>{
         debuggerCheck = true;
         const time1 = new Date().getTime();
         console.log(time1+' tst debugger');
