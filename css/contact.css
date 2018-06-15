@@ -123,7 +123,7 @@
         animation-name: opasityAnim;
         animation-duration: 0.7s;
     }
-    input[type="text"], input[type="email"], input[type="password"], textarea {
+    input[type="text"], input[type="email"], textarea {
         background: none;
         width: 100%;
         height: 100%;
@@ -185,8 +185,8 @@
         align-items: center;
         display: flex;
     }
-    .hide, hr, .dsad, .header, .hidePDA {
-        display: none; 
+    .hide, hr, .logo, .header {
+        display: none;
     }      
     section {
         margin: 58px;
@@ -293,11 +293,11 @@
         color: rgb(255, 255, 255);
         font-size: 11px;
     }
-    input[type="text"], input[type="email"], input[type="password"], textarea {
+    input[type="text"], input[type="email"], textarea {
         background: none;
         width: 100%;
     }
-    input[type="text"], input[type="email"], input[type="password"] {
+    input[type="text"], input[type="email"] {
         height: 35px;
     }
     main {
@@ -315,7 +315,6 @@
         align-items: center;
         position: relative;
         display: flex;
-        width: 255px;
     }
     .opasityCont img {
         opacity: 0.62;
@@ -366,28 +365,7 @@
     nav li .active {
         color: rgb(232, 232, 232);
     }
-    .pageName, .circleLogo, .menuButton, .copyright {
+    .circleLogo, .pageName, .menuButton, .copyright {
         display: none;
-    }
-    footer a {
-        font-size: 18px;
-        text-decoration: none;
-        color: silver;
-        margin: 15px;
-        display: inline-block;
-    }
-    footer a:nth-child(2) {
-        color: white;
-    }
-    .hidePDA .circleLogo {
-        height: 100px;
-        margin: 31px;
-        display: block;
-    }
-    .hidePDA div {
-        text-align: center;
-        margin-bottom: 32px;
-        color: white;
-        font-size: 18px;
     }
 }

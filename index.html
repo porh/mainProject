@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contacts</title>
+    <title>Home</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
 <body>
-    <a href="." class="logo">
-        <div>ITMarkets</div>
-        <div>TRY & BUY</div>
-    </a>
-    <nav>
+    <header>
+        <div class="pageName">Home</div>
+        <img src="images/logo.svg" alt="Logo" class="circleLogo">
+        <a href="." class="logo">
+            <div>ITMarkets</div>
+            <div>TRY & BUY</div>
+        </a>
+        <img src="images/menu.svg" alt="Menu" class="menuButton">
+    </header>
+    <nav class="hide">
+        <img src="images/close.svg" alt="Close menu" class="menuButton">
+        <div class="pageName">Navigation</div>
         <ul>
             <li>
-                <a href="#">Home</a>
+                <a class="active" href=".">Home</a>
             </li>
             <li>
                 <a href="#">Features</a>
@@ -34,42 +41,39 @@
                 <a href="#">Download</a>
             </li>
             <li>
-                <a class="active" href="#">Contact</a>
+                <a href="./contact.html">Contact</a>
             </li>
         </ul>
     </nav>
     <hr/>
-    
     <main>
-        <div class="header">CONTACT</div>
-        <div class="container">
-            <section>
-                Our contacts<br>
-                office@animation-for-business.com<br>
-                +38(067)-000-00-00<br>
-                www.facebook.com/animation<br>
-                www.animation-for-business.com<br><br>
-                Сopyright 2018
-            </section>
-            <form action="#">
-                <span>Drop us a line</span>
-                <label class="opasityCont">
-                    <img src="images/user.svg" alt="Name">
-                    <input placeholder="Name" type="text" name="name" pattern=".{3,}" title="Three or more characters" required>
-                </label>
-                <label class="opasityCont">
-                    <img src="images/email.svg" alt="E-mail">
-                    <input placeholder="E-mail" type="email" name="email" required>
-                </label>
-                <label class="opasityCont message">
-                    <textarea placeholder="Message" cols="40" rows="8" required></textarea>
-                </label>
-                <div class="submitWrapper">
-                    <input type="submit" value="SEND">
-                </div>
-            </form>
+        <div class="hidePDA">
+            <img src="images/logo.svg" alt="Logo" class="circleLogo">
+            <div>LOGIN</div>
         </div>
+        <form action="#" method="POST">
+            <label class="opasityCont">
+                <span>
+                    <img src="images/user.svg" alt="Name">
+                </span>
+                <input placeholder="Username" type="text" name="name" pattern=".{3,}" title="Three or more characters" required>
+            </label>
+            <label class="opasityCont">
+                <span>
+                    <img src="images/pass.svg" alt="Password">
+                </span>
+                <input placeholder="Password" type="password" name="password" required>
+            </label>
+            <div class="submitWrapper">
+                <input type="submit" value="LOGIN">
+            </div>
+        </form>
+        <footer>
+            <a href="#">Don't have an Account</a>
+            <a href="#">Sign up</a>
+        </footer>
     </main>
     <hr/>
+    <script src="js/index.js"></script>
 </body>
 </html>

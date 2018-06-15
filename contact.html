@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="pageName">Contacts</div>
+        <a href="." class="logo">
+            <div>ITMarkets</div>
+            <div>TRY & BUY</div>
+        </a>
+        <img src="images/menu.svg" alt="Menu" class="menuButton">
+    </header>
+    <nav class="hide">
+        <img src="images/close.svg" alt="Close menu" class="menuButton">
+        <div class="pageName">Navigation</div>
+        <ul>
+            <li>
+                <a href=".">Home</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            <li>
+                <a href="#">Showcase</a>
+            </li>
+            <li>
+                <a href="#">Pricing</a>
+            </li>
+            <li>
+                <a href="#">Testimonials</a>
+            </li>
+            <li>
+                <a href="#">Download</a>
+            </li>
+            <li>
+                <a class="active" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <hr/>
+    <main>
+        <div class="header">CONTACT</div>
+        <div class="container">
+            <section>
+                Our contacts<br>
+                office@animation-for-business.com<br>
+                +38(067)-000-00-00<br>
+                www.facebook.com/animation<br>
+                www.animation-for-business.com<br><br>
+                Copyright 2018
+            </section>
+            <form action="https://formspree.io/exe1@i.ua" method="POST">
+                <span>Drop us a line</span>
+                <label class="opasityCont">
+                    <img src="images/user.svg" alt="Name">
+                    <input placeholder="Name" type="text" name="name" pattern=".{3,}" title="Three or more characters" required>
+                </label>
+                <label class="opasityCont">
+                    <img src="images/email.svg" alt="E-mail">
+                    <input placeholder="E-mail" type="email" name="_replyto" required>
+                </label>
+                <label class="opasityCont message">
+                    <textarea placeholder="Message" cols="40" rows="8" required></textarea>
+                </label>
+                <div class="submitWrapper">
+                    <input type="submit" value="SEND">
+                </div>
+            </form>
+            <div class="copyright">Copyright 2018</div>
+        </div>
+    </main>
+    <hr/>
+    <script src="js/contact.js"></script>
+</body>
+</html>
